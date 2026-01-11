@@ -26,7 +26,7 @@ const GamePlay = () => {
             setTotalScore((prev) => prev + randomNumber);
         }
         else {
-            setTotalScore((prev) => prev - randomNumber);
+            setTotalScore((prev) => prev -  2);
         }
 
 
@@ -61,7 +61,7 @@ const GamePlay = () => {
                     <Buttonv onClick={resetScore}>Reset Score</Buttonv>
                     <Button onClick={toggleRules} >{showRules? "Hide" : "Show"} Rules</Button>
                 </div>
-                {showRules && <Rules  />}
+                {showRules && <Rules/>}
             </MainContainer>
         </>
     )
@@ -85,6 +85,6 @@ const MainContainer = styled.main`
     justify-content: center;
     gap:20px;
 }
-    
+ 
 
 `
